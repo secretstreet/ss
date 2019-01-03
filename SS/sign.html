@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Secret Street | Sign-Up</title>
+	<link href="sign.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet">
+</head>
+
+<body>
+	<nav id = "top-nav">
+          <a href = "rooms.html">The Rooms</a>
+          <a href = "index.html#faq">FAQ</a>
+          <a href="index.html#content"><img src="https://fontmeme.com/permalink/181210/0bb953cd6b75861fccfeb032bcaf89c6.png" alt="avayx-font"></a>
+          <a href = "sign.html#content">Sign Up</a>
+          <a href = "index.html#contact">Contact Us</a>
+      </nav>
+      
+      <header> 
+        <a href="index.html"><img src="https://fontmeme.com/permalink/181204/e2512e3932c67ef90a0433fd856f0645.png" alt="avayx-font" border="0" id = "title"></a>
+      </header>
+
+    <div id = "content">
+      <form>
+        <fieldset class = "description">
+
+          <legend><h1 class = "cont-head">Sign Up</h1></legend>
+
+          <br><br>
+
+         <!-- Every single room costs $12 for each minor and $14 for each adult. However, the Star Wars Virtual Reality Room costs $14 for minors and $16 for adults. We recommend that you make a reservation in advance because we can not guarantee there will be any open rooms at any given time. -->
+
+        <p>
+          <strong>Pricing:</strong>
+          <br>
+          <ul>
+            <li>Child: $12</li>
+            <li>Adult: $14</li>
+          </ul>
+          <br>
+          <strong>Our Recommendation:</strong> <br>
+          We recommend that you make a reservation in advance because we can not guarantee there will be any open rooms at any given time.
+        </p>
+
+          <br><br>
+          
+          <label>Your First and Last Name (You wil be the Person who Registers Everyone):</label>
+          <input type = "text" placeholder = "Ex: John Appleseed">
+
+          <br><br>
+
+          <label>Email</label>
+          <input type ="email">
+
+          <br><br>
+
+          <label>How Many People are In Your Party (Including Yourself)</label>
+          <select id = "myList">
+            <option value = "1">1</option>
+            <option value = "2">2</option>
+            <option value = "3">3</option>
+            <option value = "4">4</option>
+            <option value = "5">5</option>
+            <option value = "6">6</option>
+            <option value = "7">7</option>
+            <option value = "8">8</option>
+            <option value = "9">9</option>
+            <option value = "10">10</option>
+            <option value = "11">11</option>
+            <option value = "12">12</option>
+          </select>
+
+          <br><br>
+
+          <label>How many Minors Are You Registering?</label>
+          <select name = "minors" onkeyup="formChanged()" onchange="formChanged()">
+            <option value = "0">0</option>
+            <option value = "1">1</option>
+            <option value = "2">2</option>
+            <option value = "3">3</option>
+            <option value = "4">4</option>
+            <option value = "5">5</option>
+            <option value = "6">6</option>
+            <option value = "7">7</option>
+            <option value = "8">8</option>
+            <option value = "9">9</option>
+            <option value = "10">10</option>
+            <option value = "11">11</option>
+          </select>
+
+          <br></br>
+
+          <label>How many Adults (18 and older) are you registering (including yourself)?</label>
+          <select name = "adults" onkeyup="formChanged()" onchange="formChanged()">
+            <option value = "1">1</option>
+            <option value = "2">2</option>
+            <option value = "3">3</option>
+            <option value = "4">4</option>
+            <option value = "5">5</option>
+            <option value = "6">6</option>
+            <option value = "7">7</option>
+            <option value = "8">8</option>
+            <option value = "9">9</option>
+            <option value = "10">10</option>
+            <option value = "11">11</option>
+            <option value = "12">12</option>
+          </select>
+
+          <br><br>
+
+          <label>If you have less than 6 people or less than 12 people, do you want to fill in the extra spots with other guests? For the 6 people rooms, it is required to have at least 3 people. For the 12 people rooms, it is required to have at least 7 people.</label>
+          <br>
+          <input type="radio" name = "radio"> Yes<br>
+          <input type="radio" name = "radio"> No<br>
+
+          <br><br>
+
+          <label>What Room do you want to Do?</label>
+          <br>
+          <input type="radio" value = "kidnapped" name = "room"> Kidnapped<br>
+          <input type="radio" value = "treasure" name = "room"> Treasure Hunt<br>
+          <input type="radio" value = "castle" name = "room"> Castle Siege<br>
+          <input type="radio" value = "star" name = "room"> Star Wars VR Escape  Room
+
+          <br><br>
+
+          <label>When do you want to come?</label>
+          <input type = "date">
+
+          <br><br>
+
+          <label>Credit Card Number:</label>
+          <input type = "number">
+
+          <br><br>
+
+          <span>Calculated Price:</span>
+          <div id = "price-cont">
+          <span> $</span>
+          <span class = "price" name = "price"></span>
+          </div>
+
+          <br><br><br>
+
+          <input type = "reset" content = "Content" class = "button red">
+          <button class = "button" onclick="signUp()">Submit</button>
+
+
+          <script>
+            function signUp() {
+              alert("Thank You! Your spot has been reserved!");
+              }
+           </script>
+
+          <br>
+        </fieldset>
+      </form>
+    </div>
+    <br>
+    <br>
+       <footer>
+         <div id = "dab">
+      <br>
+      <h3 class = "cont-head whitey">Our Message</h3>
+      <br>
+      <hr class = "whitey">
+      <br>
+      <h4 class = "description2 white">We started small, but had a big idea: to bring group and family-friendly fun to our community. Now, we have a great base of supporters and customers! We hope you will have as much fun doing our rooms as we had building our rooms!
+      </h4>
+      <br>
+      <br>
+      <p id = "signature">The Secret Street Team</p>
+      <br>
+      <br>
+      <h3 class = "cont-head whitey">Follow Us on Social Media!</h3>
+      <br>
+      <hr class = "whitey">
+      <br>
+      <a href = "https://www.instagram.com">
+      <img src = "social.png" alt = "Social Media Buttons" height = "100px" width = "100px">
+      </a>
+      <br>
+      <hr>
+      <br>
+      <p class = "description2 whitey">&copy; 2018 Secret Street</p>
+      </div>
+    </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src = "script.js"></script>
+  <script src = "script2.js"></script>
+  </body>
+</html>

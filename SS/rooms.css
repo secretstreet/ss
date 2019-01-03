@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 600px;
+  width: 100%;
+  background: linear-gradient(to bottom right, #e00202, #ee9a00);
+  position: relative;
+  z-index: 9100;
+}
+
+#title {
+  margin: 250px auto; 
+  margin-left: 17.5%;
+  margin-right: 17.5%;
+  
+}
+
+#top-nav {
+  text-align: center;
+  background: /* rgba(255, 255, 255, 0.5) */ transparent;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: block;
+  z-index: 9999999;
+  position: fixed;
+  margin-top: 0;
+  width: 100%;
+  height: 40px;
+  visibility: visible !important;
+}
+
+#top-nav img {
+  margin-top: 5px;
+}
+
+#top-nav a {
+  margin-left: 5vw;
+  font-family: monospace;
+  font-size: 20px;
+  vertical-align: middle;
+  margin-top: 20px;
+}
+
+.cont-head {
+  font-family: Oswald;
+  color: rgb(253, 108, 2);
+  margin-left: 300px;
+}
+
+.description {
+  font-size: 20px;
+  color: rgb(0, 35, 39);
+  margin-right: 62.5%;
+  margin-left: 15.6%;
+  font-family: Courier, montserrat;
+  font-weight: 800;
+  
+}
+
+#star-war, #headset, image {
+  border-radius: 15px;
+}
+
+.room-head {
+  margin-left: 15.5%;
+
+}
+
+.image{
+  margin-right:21.9%;
+  overflow:hidden;
+  float: right;
+}
+
+footer {
+  background-color: rgb(253, 108, 2);
+  color: white;
+}
+
+#signature {
+  font-family: "Grand Hotel", handwriting;
+  font-size: 24px;
+  color: white;
+}
+
+.white {
+  color: white;
+  letter-spacing: .5px;
+}
+
+.whitey {
+  color: white;
+}
+
+.description2, #qa {
+  font-family: Montserrat;
+  color: white;
+}
+
+.cont-head2 {
+  font-family: Oswald;
+  color: white;
+}
+
+#star, .startext {
+  margin-top: 5.5%;
+}
+
+#dab {
+  margin-left: 3%;
+  
+  margin-right: 3%;
+}
+
